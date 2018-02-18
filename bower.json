@@ -1,0 +1,27 @@
+{
+  "name": "bitcore-wallet-client-zelcash",
+  "main": "index.js",
+  "version": "2.1.1",
+  "homepage": "https://github.com/TheTrunk/bitcore-wallet-client-zelcash",
+  "authors": ["BitPay Inc, TheTrunk"],
+  "description": "Client for bitcore-wallet-service-zelcash",
+  "keywords": [
+    "zelcash",
+    "bitcoin",
+    "copay",
+    "multisig",
+    "wallet",
+    "client",
+    "bitcore"
+  ],
+  "ignore": [
+    "**/.*",
+    "lib",
+    "node_modules",
+    "Gruntfile.js",
+    "Makefile",
+    "index.js",
+    "test",
+    "Makefile"
+  ]
+}

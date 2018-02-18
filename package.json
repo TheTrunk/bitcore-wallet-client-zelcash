@@ -1,0 +1,63 @@
+{
+  "name": "bitcore-wallet-client-zelcash",
+  "description": "Client for bitcore-wallet-service-zelcash",
+  "author": "BitPay Inc, TheTrunk",
+  "version": "6.4.0",
+  "license": "MIT",
+  "keywords": [
+    "zelcash",
+    "bitcoin",
+    "copay",
+    "multisig",
+    "wallet",
+    "client",
+    "bitcore",
+    "BWS-zelcash",
+    "BWC-zelcash",
+    "BWS",
+    "BWC"
+  ],
+  "engine": "node >= 8.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:TheTrunk/bitcore-wallet-client-zelcash.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheTrunk/bitcore-wallet-client-zelcash/issues"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "bip38": "^1.3.0",
+    "bitcore-lib-zelcash": "git://github.com/TheTrunk/bitcore-lib-zelcash#master",
+    "bitcore-mnemonic-zelcash": "git://github.com/TheTrunk/bitcore-mnemonic-zelcash#master",
+    "bitcore-payment-protocol-zelcash": "git://github.com/TheTrunk/bitcore-payment-protocol-zelcash#master",
+    "json-stable-stringify": "^1.0.0",
+    "lodash": "^4.17.4",
+    "preconditions": "^1.0.8",
+    "sjcl": "1.0.3",
+    "superagent": "^3.4.1"
+  },
+  "devDependencies": {
+    "bitcore-wallet-service-zelcash": "git://github.com/TheTrunk/bitcore-wallet-service-zelcash#master",
+    "browserify": "^13.1.0",
+    "chai": "^1.9.1",
+    "coveralls": "^2.11.2",
+    "grunt": "~0.4.0",
+    "grunt-jsdox": "^0.1.7",
+    "istanbul": "*",
+    "mocha": "^1.18.2",
+    "sinon": "^1.10.3",
+    "supertest": "^3.0.0",
+    "tingodb": "^0.3.4",
+    "uglify": "^0.1.1",
+    "uuid": "^2.0.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter spec test",
+    "test": "./node_modules/.bin/mocha",
+    "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "docs": "./node_modules/.bin/jsdox lib/* lib/common lib/errors -o docs && cat README.header.md  docs/*.md LICENSE > README.md"
+  }
+}
