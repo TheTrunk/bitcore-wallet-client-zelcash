@@ -7,7 +7,7 @@ The *official* client library for [bitcore-wallet-service-zelcash](https://githu
 
 This package communicates with BWS-zelcash [Bitcore wallet service zelcash](https://github.com/TheTrunk/bitcore-wallet-service-zelcash) using the REST API. All REST endpoints are wrapped as simple async methods. All relevant responses from BWS are checked independently by the peers, thus the importance of using this library when talking to a third party BWS instance.
 
-See [Bitcore-wallet-zelcash](https://github.com/bitpay/bitcore-wallet-zelcash) for a simple CLI wallet implementation that relays on BWS and uses bitcore-wallet-client-zelcash. TODO .-)
+See [Bitcore-wallet-zelcash](https://github.com/TheTrunk/bitcore-wallet-zelcash) for a simple CLI wallet implementation that relays on BWS and uses bitcore-wallet-client-zelcash.
 
 ## Generation of BWC js, Linux
 Download, cd to bitcore-wallet-client-zelcash and 
@@ -24,7 +24,7 @@ git clone https://github.com/TheTrunk/bitcore-wallet-client-zelcash.git
 cd bitcore-wallet-client-zelcash
 bower install
 ```
-* via [NPM](https://www.npmjs.com/package/bitcore-wallet-client-zelcash): 
+* via [NPM](https://www.npmjs.com): 
 ```sh
 git clone https://github.com/TheTrunk/bitcore-wallet-client-zelcash.git
 cd bitcore-wallet-client-zelcash
